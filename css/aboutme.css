@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+div#aboutme {
+    background-color: white;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    border-radius: 1.875rem;
+}
+
+#mikepic {
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 1.875rem;
+}
+
+p#mikeinfo {
+    margin-top: 0;
+}
+
+ul {
+    padding-top: 1%;
+    margin-right: 3%;
+}
+
+#hobbys {
+    padding-top: 5%;
+}
+
+li {
+    padding-top: 5%;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    color: gold;
+}
+
+.card {
+    width: 30vw;
+    margin: 0 auto;
+    border: 0.25rem solid gold;
+    background-color: lightyellow;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    box-shadow: 0.438rem 0.625rem 1.063rem rgba(0, 0, 0, 0.2);
+    transition: background-color 800ms ease-out 100ms;
+    max-height: 100%;
+    max-width: 100%;
+    color: black;
+}
+
+.card:hover {
+    background-color: gold;
+}
+
+#scorbunnycard {
+    width: 30vw;
+    margin: 0 auto;
+    border: 0.25rem solid rgb(255, 0, 0);
+    background-color: rgb(255, 206, 206);
+    border-radius: 1.875rem;
+    overflow: hidden;
+    box-shadow: 0.438rem 0.625rem 1.063rem rgba(0, 0, 0, 0.2);
+    transition: background-color 800ms ease-out 100ms;
+    color: black;
+}
+
+#scorbunnycard:hover {
+    background-color: red;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.name {
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    padding: 0.313rem;
+    margin: 0;
+}
+
+.skills {
+    padding: 10px;
+}
+
+.skills h3 {
+    text-align: center;
+}
+
+.moves {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokedex {
+    text-align: center;
+    padding: 0.625rem;
+    background-color: gold;
+}
+
+#scorbunnypokedex {
+    text-align: center;
+    padding: 0.625rem;
+    background-color: rgb(255, 0, 0);
+}
+
+#scorbunnypokedex a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+}
+
+.pokedex a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+}
+
+.pokedex a:hover {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+#scorbunnypokedex a:hover {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+#pokemoninfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+
+}
+
+.profile-picture {
+    max-height: 380px;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.spacebetweensections {
+    margin-bottom: 10vh;
+}
+
+.marvelcard {
+    width: 20vw;
+    height: 35vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50rem;
+    border: solid black;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.marvel-picture {
+    max-height: 300px;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#grootpic {
+    margin-top: 5%;
+}
+
+#lokipic {
+    margin-left: 0%;
+}
+
+.marvelcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+@media (max-width:1000px) {
+    section#pokemoninfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        text-align: center;
+        width: 70vw;
+        margin-bottom: 3vh;
+    }
+
+    #scorbunnycard {
+        text-align: center;
+        margin-bottom: 3vh;
+        width: 70vw;
+    }
+    
+    div#aboutme {
+        display: block;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: smaller;
+    }
+
+    #mikepic {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 94%;
+        margin-top: 3%;
+    }
+
+    li {
+        padding-top: 1%;
+    }
+
+    ul {
+        padding-bottom: 3%;
+        margin-right: 3%;
+        margin-left: -3%;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .profile-picture {
+        max-height: 200px;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    .pokepics {
+        margin-left: 0;
+    }
+    
+    .marvel-picture {
+        max-height: 110px;
+        object-fit: cover;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .marvelpics {
+        margin-left: 0;
+    }
+
+    .marvelcard {
+        text-align: center;
+        margin-bottom: 3vh;
+        margin: 0 auto;
+        width: 30vw;
+        height: 15vh;
+        border: none;
+        border-radius: 50%;
+    }
+}

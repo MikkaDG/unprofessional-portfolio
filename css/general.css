@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/starwars-header.webp);
+    color: white;
+    font-family: 'Poller One';
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+header#hero h2 {
+    margin: 0;
+    margin-top: 6vh;
+    color: gold;
+    background-image: url(../img/starwars-header.webp);
+    font-family: 'Londrina Outline';
+    width: fit-content;
+    font-size: 3rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 0.6rem;
+    border: solid 0.2rem gold;
+}
+
+header#hero {
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../img/jedi-header\ kopie.jpeg);
+    background-repeat: round;
+    flex-direction: column;
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: gold;
+    background-image: url(../img/starwars-header.webp);
+    position: sticky;
+    top: 0px;
+}
+
+nav a:hover {
+    background-image: url(../img/hyperspace.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+
+nav a {
+    padding: 1vw;
+    padding-right: 9.5vw;
+    padding-left: 9.5vw;
+    text-decoration: none;
+    color: gold;
+    font-size: 1.1em;
+    transition: all 0.5s ease-in-out;
+    padding-top: 1%;
+    padding-bottom: none;
+    align-items: center;
+    font-family: 'Poller One';
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    color: gold;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.839);
+}
+
+#footerdiv {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact img {
+    width: 100px;
+}
+
+@media (max-width:1000px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding-left: 25vw;
+        padding-right: 25vw;
+        font-size: medium;
+    }
+
+    header#hero {
+        height: 10vh;
+    }
+
+    header#hero h2 {
+        margin-top: 2vh;
+        font-size: 200%;
+        border: solid 0.1rem;
+    }
+
+    body {
+        width: 100% auto;
+    }
+
+    #footerp {
+        font-size: 0.8rem;
+        margin-left: 5vw;
+    }
+
+    #contact img {
+        width: 75px;
+    }
+}
