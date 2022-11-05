@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url(//db.onlinewebfonts.com/c/6f0cd4643b13ab5889b7d772ca093555?family=Portico+Outline);
+@import url(//db.onlinewebfonts.com/c/59b83b6e00fdf87f5b6f18084906f1c1?family=Portico+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     background-image: url(../img/starwars-header.webp);
     color: white;
-    font-family: 'Poller One';
+    font-family: 'Roboto';
     background-color: black;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Portico Regular';
 }
 
 header#hero h2 {
@@ -19,7 +21,7 @@ header#hero h2 {
     margin-top: 6vh;
     color: gold;
     background-image: url(../img/starwars-header.webp);
-    font-family: 'Londrina Outline';
+    font-family: 'Portico Outline';
     width: fit-content;
     font-size: 3rem;
     padding-left: 1vw;
@@ -29,7 +31,7 @@ header#hero h2 {
 }
 
 header#hero {
-    height: 20vh;
+    height: 25vh;
     background-size: cover;
     background-image: url(../img/jedi-header\ kopie.jpeg);
     background-repeat: round;
@@ -48,6 +50,7 @@ nav {
     background-image: url(../img/starwars-header.webp);
     position: sticky;
     top: 0px;
+    font-size: 1.4em;
 }
 
 nav a:hover {
@@ -60,22 +63,34 @@ nav a:hover {
 
 nav a {
     padding: 1vw;
-    padding-right: 9.5vw;
-    padding-left: 9.5vw;
+    padding-inline: 8%;
     text-decoration: none;
     color: gold;
-    font-size: 1.1em;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease;
     padding-top: 1%;
-    padding-bottom: none;
     align-items: center;
-    font-family: 'Poller One';
+    font-family: 'Portico Regular';
 }
 
-#top {
-    display: flex;
-    justify-content: center;
-    color: gold;
+#totop {
+    background-color: gold;
+    position: fixed;
+    padding: 0px;
+    border-radius: 25rem;
+    bottom: 20px;
+    right: 20px;
+    width: 5vw;
+    height: 5vw;
+}
+
+#totop img {
+    width: 5vw;
+}
+
+#totop:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 footer {
@@ -101,7 +116,7 @@ footer {
     width: 100px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:800px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -109,9 +124,9 @@ footer {
     }
 
     nav a {
-        padding-left: 25vw;
-        padding-right: 25vw;
-        font-size: medium;
+        padding-left: 30vw;
+        padding-right: 30vw;
+        font-size: 1rem;
     }
 
     header#hero {
@@ -119,8 +134,8 @@ footer {
     }
 
     header#hero h2 {
-        margin-top: 2vh;
-        font-size: 200%;
+        margin-top: 2.5vh;
+        font-size: 2rem;
         border: solid 0.1rem;
     }
 
@@ -135,5 +150,16 @@ footer {
 
     #contact img {
         width: 75px;
+    }
+
+    #totop {
+        width: 10vw;
+        height: 10vw;
+        bottom: 50px;
+        right: 10px;
+    }
+    #totop img{
+        width: 10vw;
+        height: 10vw;
     }
 }
