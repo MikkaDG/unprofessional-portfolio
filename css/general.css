@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Portico Outline';
-    src: url(fonts/Portico\ Outline.ttf);
+    src: url(/fonts/Portico\ Outline.otf);
 }
 
 @font-face {
     font-family: 'Portico Regular';
-    src: url(fonts/Portico\ Regular.ttf);
+    src: url(/fonts/Portico\ Regular.otf);
 }
 
 body {
@@ -59,7 +59,6 @@ nav {
     position: sticky;
     top: 0px;
     font-size: 1.4em;
-    font-family: 'Portico Regular';
 }
 
 nav a:hover {
@@ -78,6 +77,7 @@ nav a {
     transition: all 0.3s ease;
     padding-top: 1%;
     align-items: center;
+    font-family: 'Portico Regular', sans-serif;
 }
 
 #totop {
