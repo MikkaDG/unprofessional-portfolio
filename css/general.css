@@ -158,6 +158,10 @@ footer {
         bottom: 50px;
         right: 10px;
     }
+    #totop:hover {
+        background-color: gold;
+        transition: none;
+    }
     #totop img{
         width: 10vw;
         height: 10vw;
